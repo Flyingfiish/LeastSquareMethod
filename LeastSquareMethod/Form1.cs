@@ -49,11 +49,11 @@ namespace LeastSquareMethod
             a = results.Item1;
             b = results.Item2;
 
-            label2.Text = a.ToString();
-            label4.Text = b.ToString();
+            label2.Text = Math.Round(a, 3).ToString();
+            label4.Text = Math.Round(b, 3).ToString();
 
             double xmin = myX[0] - 1;
-            double xmax = myX[myX.Length -1 ] + 1;
+            double xmax = myX[myX.Length - 1] + 1;
 
             for (double x = xmin; x <= xmax; x += 0.001)
             {
